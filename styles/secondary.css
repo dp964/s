@@ -1,0 +1,37 @@
+//This is the secondary style, in case for some reason the other one doesn't load. It is being phased out for most pages
+* div a:link, div a:visited
+{
+-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+cursor: pointer; 
+	color: rgb(41, 140, 202); text-decoration: none !important;
+}
+
+  * div a:hover
+{
+background-color:#0000FF !important;  
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0000FF), color-stop(1, #00AAFF)) !important;
+	background:-moz-linear-gradient(top, #0000FF 5%, #00AAFF  100%) !important;
+	background:-webkit-linear-gradient(top, #0000FF 5%, #00AAFF  100%) !important;
+	background:-o-linear-gradient(top, #0000FF 5%, #00AAFF  100%) !important;
+	background:-ms-linear-gradient(top, #0000FF 5%, #00AAFF  100%) !important;
+	background:linear-gradient(to bottom, #0000FF 5%, #00AAFF 100%) !important;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000FF ', endColorstr='#00AAFF ',GradientType=0) !important
+	background: linear-gradient(rgb(0, 0, 255) 5%, rgb(0, 170, 255) 100%) rgb(0, 0, 255) !important; 
+-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; 
+color: white !important; text-decoration: none !important; cursor: pointer;
+}
+a.x, a.x:link, a.x:visited, a.y, a.y:link, a.y:visited
+{
+background-color:none !important;
+display:inline-block !important;
+font-weight:normal !important;
+text-decoration:none;
+text-transform:none !important;
+}
+a.x:hover, a.x:active, a.y:hover, a.y:active
+{
+color:white !important;
+display:inline-block !important;
+font-weight:normal !important;
+text-transform:none !important;
+}
