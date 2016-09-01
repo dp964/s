@@ -21,7 +21,7 @@ setTimeout(function(){    document.title="Loading..."}, 1000)
 var home=document.getElementById("homepage").href+"?serve="+lib;
 setTimeout(function(){window.location=home}, 5000)
 }
-catch (err){window.location="index.html"}
+catch (err){}
 }
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
