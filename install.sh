@@ -1,14 +1,14 @@
-        #!/bin/bash
+#!/bin/bash
 
 ### Installing Packages
 echo ">>> INSTALLING REQUIRED PACKAGES"
 
-dnf makecache --refresh
-dnf config-manager --set-enabled crb
-
 # Install Dev Tools
 yum groupinstall -y 'Development Tools'
 yum install -y nano
+
+dnf makecache --refresh
+dnf config-manager --set-enabled crb
 
 # Install Mongo DB
 rm -f /etc/yum.repos.d/mongodb-org-6.0.repo
