@@ -6,8 +6,7 @@ echo ">>> INSTALLING REQUIRED PACKAGES"
 # Install Dev Tools
 yum groupinstall -y 'Development Tools'
 yum install -y nano
-
-dnf makecache --refresh
+dnf makecache --refreshh
 dnf config-manager --set-enabled crb
 
 # Install Mongo DB
