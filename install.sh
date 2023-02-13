@@ -84,7 +84,7 @@ cd ~/
 git clone https://github.com/sctplab/usrsctp
 cd ~/usrsctp
 ./bootstrap
-./configure
+./configure --prefix=/usr --disable-programs --disable-inet --disable-inet6
 make
 make install
 cd ~/
@@ -189,4 +189,14 @@ cd ~/coturn
 ./configure
 make
 make install
+cd ~/
+
+# Install Janus
+git clone https://github.com/meetecho/janus-gateway.git
+cd ~/janus-gateway
+sh autogen.sh
+./configure
+make
+make install
+make configs
 cd ~/
